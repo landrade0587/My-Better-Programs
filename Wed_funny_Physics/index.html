@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Funny Physics | Perspective | Home</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo1.png" alt="Funny Physics Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="temperature.html">Temperature</a>
+                <a href="oscillation.html">Oscillation</a>
+                <a href="site-plan.html">Site-Plan</a>                
+            </nav>
+            <div class='go-to-class-button'>
+                <a class='Discover with us'></a>
+            </div>
+        </header>      
+        <div class="slideshow-container">                        
+              <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/Home_01.jpg" style="width:100%" alt="Page home">                              
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/Home_0.jpg" style="width:100%"  alt="Page home">                                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/Home.jpg" style="width:100%" alt="Page home">                                
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <section id="hero-msg">
+                <h1 class="home-title">Movement of Objects.</h1>
+                <h4>We appreciate the wonders of Physics that happen every day around us.</h4>                
+                <div class='button-box'>
+                    <a class='book' href="temperature.html">DISCOVER WHITH US</a>
+                </div>
+            </section>
+        </div>        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <main class="home-grid">
+            <section class="movement-of-objects">
+                <h2>Where you will find mainly movements of objects in our environment.</h2>
+                <p>Every day can be a wonderful adventure, if you stop for a moment and look around you at the various physical phenomena that are occurring at the macroscopic level, even if you think about it more carefully we can notice those at the microscopic or quantum level.</p>
+                
+            </section>            
+            <section class="our-home-card">
+                <img class="card-img" src="images/Home_1.jpg" alt="Home">                
+                <h3>Our Home</h3>
+                <p>When watching television, listening to music or even taking a shower, we can notice the related physical phenomena.</p>
+            </section>
+            <section class="our-ward-card">
+                <img class="card-img" src="images/Home_2.jpg" alt="Ward">                
+                <h3>Our Ward</h3>
+                <p>Believe it or not, for example, if you think that we are at rest, the earth moves at a speed of 1600 kilometers per hour.</p>
+            </section>
+            <section class="in-the-street-card">
+                <img class="card-img" src="images/Home_3.jpg" alt="Street">                
+                <h3>In the Street</h3>
+                <p>You can see cars, motobikes, bikes or people, and other objects moving because of a force applied to them.</p>
+            </section>
+            <section class="in-our-job-card">
+                <img class="card-img" src="images/Home_4.jpg" alt="Job">                
+                <h3>In Our Job</h3>
+                <p>From the air conditioning to the lighting that we have, many physical entities can be observed in the work environment that will always be there even if we do not notice them.</p>
+            </section>
+            <section class="in-our-study-card">
+                <img class="card-img" src="images/Home_5.jpg" alt="Study">                
+                <h3>In Our Study</h3>
+                <p>The letters of the printed texts, or the electronic devices do not show another facet of the physics in our daily life.</p>
+            </section>
+            <section class="smackdown1">
+                <div id="background1"></div>                
+            </section>
+            <section class="smackdown2">
+                <div id="background2"></div>                
+            </section>
+            <section class="smackdown-header">
+                <h2 class="smackdown_header">The great thing about seeing movements on a large scale and at the microscopic level.</h2>
+            </section>
+            <section class="smackdown_message1">
+                <p class="smackdown_text">Light behaves as a wave and as a particle due to its dual characteristics, which is why it is called a wavelet.</p>               
+            </section>
+            <section class="smackdown_message2">
+                <p class="smackdown_text">The sweat of our body when carrying out any physical activity: it is only the regulation of the heat that comes out in order to bring the body temperature to acceptable levels.</p>               
+            </section>
+            <section class="smackdown_message3">
+                <p class="smackdown_text">The light from other planets or stars is moved due to the gravitational mass of other celestial bodies, called gravitational lensing.</p>
+            </section>
+            <section class="smackdown_image">
+                <img  src="images/Home_6.jpg" alt="Home 2">
+            </section>    
+        </main>
+        <footer>
+            <p>Funny Physics &copy; 2023 - Luis Andrade</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>

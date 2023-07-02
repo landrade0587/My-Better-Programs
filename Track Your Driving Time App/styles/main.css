@@ -1,0 +1,177 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    background-color: #97e1f0;
+    
+
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: .9rem;
+  margin: 5px 0;
+  color: #131617;
+}
+
+p {
+  margin: 5px 0;
+}
+.weathersummary {
+  width: 100%;
+  max-width: 320px;
+  color:#f6f4f4;
+  background-color: #000709;
+  font-size: 1rem;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(1, 42, 63, 0.4);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+#icon{
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #04c3e9;
+  margin: 15px;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+#title,#title2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #0077B6;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+#motivation {
+    display: flex;
+    align-content: space-evenly;
+    row-gap: 10px;
+    gap: 20px ;
+ }
+
+ .vl {
+    border-left: 3px solid  black;
+    height: 250px;
+  }
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+}
+
+nav {
+    background-color: #0077B6;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+section {
+    text-align: center;
+}
+
+
+/* Class Selectors */
+.active {
+    background-color: white;
+    color: black;
+
+}
+
+.open li {
+    display: block;
+}
+
+/* ID Selectors */
+#functions {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.button2 {
+    background-color: #f1e42c;    
+}
+
+#photo{
+    width: 30%;
+    height: 30%;
+    border-style: double;}
+
+/* media queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #functions {
+        grid-template-columns: 1fr 1fr;
+    }
+}

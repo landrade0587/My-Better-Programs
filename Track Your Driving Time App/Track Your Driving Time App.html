@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSE 121b: Week 06 | Final Project | Luis Andrade</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/ecuations.js"></script>    
+    <script defer src="scripts/weather.js"></script>  
+  </head>
+
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="../../wk1/week01/index.html">Home</a></li>
+        <li><a href="../../wk2/week02/task2.html">Lesson 2</a></li>
+        <li><a href="../../wk3/week03/task3.html">Lesson 3</a></li>
+        <li><a href="../../wk4/week04/task4.html">Lesson 4</a></li>
+        <li><a href="../../wk5/week05/task5.html">Lesson 5</a></li>
+        <li><a href="#" class="active">Final Project</a></li>
+      </ul>
+    </nav>
+    
+    <div id="title">
+      <h1>Track Your Driving Time App</h1>
+      <hr />
+    </div>
+
+    <header>
+      <h2>Daily Motivational Corner</h2>
+      <div id="motivation">
+        <h4>Daily Picture</h4>
+        <img id="photo" src="images/placeholder.png" alt="Photo" />
+        <div class="vl"></div>
+        <h4>Daily Quote</h4>
+        <p id="message1">Motivational Quote</p>
+      </div>
+      <hr />
+    </header>
+
+
+<body>
+
+  <header>
+    <h1>Time Tracker</h1>
+  </header>
+  
+  <main>
+      <section class="weather">
+        <div class="weathersummary">
+          <h2>Today's Weather</h2>
+          <img id="icon" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+            alt="unknown">
+          <p>Currently: <span id="weather"></span> </p>
+          <p>Current Temp: <span id="current-temp"></span></p>
+          <p>Feels Like: <span id="feels_like"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+        </div>
+      </section>
+      
+      <h3>
+        <span id="driveStatus"></span>
+      </h3>
+
+    </section>
+    <hr>
+
+    <section>
+      <h2 id="title">Record Your Time</h2>
+      <fieldset id="">
+        <legend>Enter Date and Time</legend>
+        <input id="inputKey" type="date" placeholder="Enter date">
+        <input id="inputValue" type="number" placeholder="Enter Minutes">
+        <button type="button" id="buttonInsert">Log Time</button>
+        <button type="button" id="buttonClear">Clear log</button>
+      </fieldset>
+      <fieldset id="">
+        <legend>Logged Dates and times</legend>
+        <div id="output"></div>
+        <div id="time"></div>
+        <div id="hoursleft"></div>
+      </fieldset>     
+    </section>
+  
+ 
+      <hr />
+      <section>
+        <h1>Weather sources and links</h1>
+        <button class="button2">
+          <a href="https://b2b.meteum.ai/home" target="_blank">Meteum-Website</a>
+        </button>
+        <button class="button2">
+          <a
+            href="https://openweathermap.org/find?q=barranquilla"
+            target="_blank"
+            >Open-Weather-Map</a
+          >
+        </button>
+        <button class="button2">
+          <a
+            href="http://www.ideam.gov.co/"
+            target="_blank"
+            >Ideam</a
+          >
+        </button>
+        <button class="button2">
+          <a href="https://www.accuweather.com/es/world-weather" target="_blank"
+            >World-Weather-Information</a
+          >
+        </button>
+        <button class="button2">
+          <a href="https://worldweather.wmo.int/es/home.html" target="_blank"
+            >World-Weather-Page</a
+          >
+        </button>
+        <button class="button2">
+          <a href="https://es.weatherspark.com/" target="_blank">Weather-Spark</a>
+        </button>
+      </section>
+      <hr />
+
+      <section>
+        <h2>Definitions</h2>
+        <span id="definitions"></span>
+      </section>
+      <hr />
+
+      <section>
+        <h2>Point of Contact Information</h2>
+        <div>
+          <label>Name:</label>
+          <span id="name"></span>
+        </div>
+        <div>
+          <label>Email Address:</label>
+          <span id="email"></span>
+        </div>
+        <div>
+          <label>GitHub:</label>
+          <span id="github"></span>
+        </div>
+        <hr />
+      </section>
+    </main>
+
+    <br />
+    <footer>
+      <h4 id="lastaccessed">Last Accessed</h4>
+    </footer>
+</body>
+</html>
